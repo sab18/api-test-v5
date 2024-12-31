@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 
 #LOCAL or DEPLOY
-source='LOCAL'   
+source='DEPLOY'   
 
 
 if source=='LOCAL':
