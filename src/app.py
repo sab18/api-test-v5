@@ -11,14 +11,14 @@ import pymongo                                                  # pip install "p
 from bson.objectid import ObjectId
 
 
-client = pymongo.MongoClient(
-    "mongodb+srv://sarabarrows18:mongo@cluster0.vgo9y.mongodb.net/")
+# client = pymongo.MongoClient(
+#     "mongodb+srv://sarabarrows18:mongo@cluster0.vgo9y.mongodb.net/")
 
 
 
-db = client["test-db"]
-# Go into one of my database's collection (table)
-collection = db["table"]
+# db = client["test-db"]
+# # Go into one of my database's collection (table)
+# collection = db["table"]
 
 
 app=dash.Dash(__name__)
@@ -46,17 +46,17 @@ def callbk(n_clicks, input_val):
         # sheet.append_row([input_val,2])
         # #sheet.update_cell(1, 1, input_val)
         
-        record = {
-            "employee": input_val,
-            "department": "engineering",
-            "product": "PC",
-            "part": "motherboard",
-            "quantity": "12",
-            "day": "Saturday"
-        }
+        # record = {
+        #     "employee": input_val,
+        #     "department": "engineering",
+        #     "product": "PC",
+        #     "part": "motherboard",
+        #     "quantity": "12",
+        #     "day": "Saturday"
+        # }
 
-        collection.insert_one(record)
-        testing = collection.find_one()
+        # collection.insert_one(record)
+        # testing = collection.find_one()
 
 
         return f'{input_val} has been entered'
