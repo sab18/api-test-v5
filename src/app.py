@@ -48,6 +48,7 @@ collection = db["table"]
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets,
                 suppress_callback_exceptions=True)
+server=app.server
 
 app.layout = html.Div([
     html.H1('Web Application connected to a Live Database', style={'textAlign': 'center'}),
