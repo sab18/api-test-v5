@@ -11,15 +11,16 @@ import pymongo                                                  # pip install "p
 from bson.objectid import ObjectId
 import os
 
-mango=os.environ.get(mongo_creds)
-client = pymongo.MongoClient(mango
-    )
+# "mongodb+srv://sarabarrows18:mongo@cluster0.vgo9y.mongodb.net/"
+# mango=os.environ.get(mongo_creds)
+# client = pymongo.MongoClient(mango
+#     )
 
 
 
-db = client["test-db"]
-# Go into one of my database's collection (table)
-collection = db["table"]
+# db = client["test-db"]
+# # Go into one of my database's collection (table)
+# collection = db["table"]
 
 
 app=dash.Dash(__name__)
