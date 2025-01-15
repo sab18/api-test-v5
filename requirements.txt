@@ -8,3 +8,4 @@ dash-tools
 setuptools==68
 wheel
 google-auth==2.21.0
+pymongo
