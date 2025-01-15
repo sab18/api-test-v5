@@ -1,7 +1,7 @@
 services:
   # See https://render.com/docs/blueprint-spec for more info on render blueprints
   - type: web
-    name: api-test-v5
+    name: api-test-v5-2
     env: python
     plan: free
     # A requirements.txt file must exist
