@@ -9,16 +9,17 @@ import pandas as pd                                             # pip install pa
 import plotly.express as px
 import pymongo                                                  # pip install "pymongo[srv]"
 from bson.objectid import ObjectId
+import os
+
+mango=os.environ.get(mongo_creds)
+client = pymongo.MongoClient(mango
+    )
 
 
-# client = pymongo.MongoClient(
-#     "mongodb+srv://sarabarrows18:mongo@cluster0.vgo9y.mongodb.net/")
 
-
-
-# db = client["test-db"]
-# # Go into one of my database's collection (table)
-# collection = db["table"]
+db = client["test-db"]
+# Go into one of my database's collection (table)
+collection = db["table"]
 
 
 app=dash.Dash(__name__)
@@ -63,6 +64,6 @@ def callbk(n_clicks, input_val):
     return ''
 
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
+# if __name__ == '__main__':
+#     app.run_server(debug=True)
   
